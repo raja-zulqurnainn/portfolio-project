@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  <title>Document</title> 
+   <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+    
+        emailjs.init({
+          publicKey: "86CckBHd20Zm2dqAG",
+        });
+      })();
+    </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1><span class="spanweb">Muhammad </span> <span>Zulqurnain</span></h1>
+    </div>
+    <div class="menubar">
+      <nav><a class="menu" href="#home">Home</a></nav>
+      <nav><a class="menu" href="#" id="scrollToResume">About</a></nav>
+      <nav><a onclick="showResume()" class="menu" href="#resume-section">Resume</a></nav>
+      <nav><a class="menu" href="#portfolio">Projects</a></nav>
+      <nav><a class="menu" href="#" id="scrollToContact">Conatct</a></nav>
+    </div>
+    <div class="icon-hamburger"><i class="fa-solid fa-list"></i></div>  
+  </header>
+   
+  <section id="home">
+    <div class="first-intropart">
+      <div class="welcome">
+        <h3>----------- Welcome</h3>
+      </div>
+      <div class="myintro">
+        <h1>Hi   I am <span>  Muhammad </span> Zulqurnain </h1>
+      </div>
+      <div class="webdeveloper">
+        <h2>Frontend Developer</h2>
+      </div>
+      <div class="about-para">
+        <p>A motivated learner with a growing skillset in web develpment. I'm on a journey to turn my passion into
+          real-world impact through continuous learning and meaningful projects.</p>
+      </div>
+      <div class="more-about">
+        <div class="us">
+          <h5><a href="#" onclick="showResume()">More About Me</a></h5>
+        </div>
+        <div class="iconone"><a href="https://www.facebook.com/raja.zulqurnain.1238"><i class="fa-brands fa-facebook"></i></a></div>
+        <div class="icontwo"><a href="https://www.linkedin.com/in/raja-zulqurnain-a7266535b/"><i class="fa-brands fa-linkedin"></i></a></div>
+      </div>
+    </div>   
+  </section>
+  
+  <section class="resume">
+    <div class="resume-hr">
+      <h1>About</h1>
+      <hr>
+    </div>
+    <div class="education-text">
+      <div class="skills">
+        <h4>Skills </h4>
+        <span>03</span>
+      </div>
+      <div class="education">
+        <h4>Education </h4>
+        <span>03</span>
+      </div>
+    </div>
+    <div class="biodata-text">
+      <div class="html-matric-flex">
+        <div class="html">
+          <h2>HTML</h2>
+          <p>I have a solid understanding of HTML, which serves as the foundation of every web page I create. I use
+            semantic HTML to structure content clearly and accessibly, ensuring that websites are both user-friendly and
+            SEO-optimized.</p>
+          <hr>
+        </div>
+        <div class="matriculation">
+          <div class="matric">
+            <h2>Matriculation</h2>
+            <span>2009-2021</span>
+          </div>
+          <p>I completed my Matriculation in 2021 from Mid East Model School, Karachi, with a focus on Science. This
+            phase laid the groundwork for my interest in technology and provided me with a solid academic foundation.
+          </p>
+          <hr>
+        </div>
+      </div>
+      <div class="css-inter-flex">
+        <div class="css">
+          <h2>CSS</h2>
+          <p>With CSS, I bring websites to life by crafting responsive, visually appealing layouts. I’m skilled in using
+            modern CSS techniques like Flexbox, Grid, and media queries to create clean designs that look great on all
+            screen sizes.</p>
+          <hr>
+        </div>
+        <div class="intermediate">
+          <div class="inter">
+            <h2>Intermediate</h2>
+            <span>2021-2023</span>
+          </div>
+          <p>I completed my Intermediate in 2023 from Aisha Bawany Government College, Karachi. During this time, I
+            further developed my learning skills and strengthened my interest in technology and computer science.</p>
+          <hr>
+        </div>
+      </div>
+      <div class="js-uni-flex">
+        <div class="javascript">
+          <h2>JAVASCRIPT</h2>
+          <p>JavaScript allows me to add interactivity and dynamic behavior to websites. I use it to build engaging user
+            experiences, such as form validation, interactive components, and real-time updates, making websites more
+            functional and user-centric.</p>
+        </div>
+        <div class="GRADUATION">
+          <div class="university">
+            <h2>Bachelor's degree</h2>
+            <span>Undergraduate</span>
+          </div>
+          <p>I am currently pursuing my Bachelor's degree in Computer Science from Federal urdu University, Karachi.
+            This program is helping me build a strong foundation in programming, problem-solving, and modern
+            technologies as I work toward my career in the tech industry.</p>
+        </div>
+      </div>
+    </div>
+    <div class="displayseen">
+      <div class="html">
+        <h2>HTML</h2>
+        <p>I have a solid understanding of HTML, which serves as the foundation of every web page I create. I use
+          semantic HTML to structure content clearly and accessibly, ensuring that websites are both user-friendly and
+          SEO-optimized.</p>
+        <hr>
+      </div>
+      <div class="css">
+        <h2>CSS</h2>
+        <p>With CSS, I bring websites to life by crafting responsive, visually appealing layouts. I’m skilled in using
+          modern CSS techniques like Flexbox, Grid, and media queries to create clean designs that look great on all
+          screen sizes.</p>
+        <hr>
+      </div>
+      <div class="javascript">
+        <h2>JAVASCRIPT</h2>
+        <p>JavaScript allows me to add interactivity and dynamic behavior to websites. I use it to build engaging user
+          experiences, such as form validation, interactive components, and real-time updates, making websites more
+          functional and user-centric.</p>
+          <hr>
+      </div>
+      <div class="matriculation">
+        <div class="matric">
+          <h2>Matriculation</h2>
+          <span>2009-2021</span>
+        </div>
+        <p>I completed my Matriculation in 2021 from Mid East Model School, Karachi, with a focus on Science. This phase
+          laid the groundwork for my interest in technology and provided me with a solid academic foundation.
+        </p>
+        <hr>
+      </div>
+      <div class="intermediate">
+        <div class="inter">
+          <h2>Intermediate</h2>
+          <span>2021-2023</span>
+        </div>
+        <p>I completed my Intermediate in 2023 from Aisha Bawany Government College, Karachi. During this time, I
+          further developed my learning skills and strengthened my interest in technology and computer science.</p>
+        <hr>
+      </div>
+      <div class="GRADUATION">
+        <div class="university">
+          <h2>Bachelor's degree</h2>
+          <span>Undergraduate</span>
+        </div>
+        <p>I am currently pursuing my Bachelor's degree in Computer Science from Federal urdu University, Karachi. This
+          program is helping me build a strong foundation in programming, problem-solving, and modern technologies as I
+          work toward my career in the tech industry.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+<section id="resume-section">
+    <div class="resume-image">
+    <img src="resume.png" alt="">
+    </div>
+  </section>
+ <section id="portfolio">
+  <div class="portfolio-header">
+    <h2>My Projects</h2>
+    <hr>
+    <p>Here are some of the projects I’ve worked on recently.</p>
+  </div>
+  <div class="portfolio-grid">
+    <div class="portfolio-card">
+      <img src="first-project.png" alt="Project 1">
+      <h3>Project One</h3>
+      <p>A sleek, responsive website built with HTML, CSS, and JavaScript — designed for speed, simplicity, and user engagement.</p>
+      <a href="https://raja-zulqurnainn.github.io/my-portfolio/" class="btn">View Project</a>
+    </div>
+    <div class="portfolio-card">
+      <img src="omnifood.png" alt="Project 2">
+      <h3>Omnifood Website</h3>
+      <p>A smart food delivery site featuring smooth animations, responsive layout, and a real-world UX design, built with modern HTML, CSS, and JS.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="portfolio-card">
+      <img src="jollyfolio.png" alt="Project 3">
+      <h3>Jollyfolio Website</h3>
+      <p>A stylish e-commerce website built with pure HTML, CSS, and JavaScript. Showcases products with interactive design, responsive layout, and engaging visuals — all without any external frameworks.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+  </div>
+</section> 
+
+  <section class="contact">
+    <div class="contact-info">
+      <h2>Contact Info</h2>
+      <div class="email">
+        <div><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h5>MAIL US</h5>
+          <a href="">rajazulfi92@gmail.com</a>          
+        </div>
+      </div>
+      <div class="contact-us">
+        <div><i class="fa-solid fa-phone-volume"></i></div>
+        <div>
+          <h5>CONTACT US</h5>
+          <a href="">+92 340-2086783</a>
+        </div>
+      </div>
+      <div class="linkdien">
+        <div><i class="fa-brands fa-linkedin"></i></div>
+        <div>
+          <h5>LINKDIEN</h5>
+          <a href="">www.linkedin.com/in/raja-zulqurnain-a7266535b</a>
+        </div>
+      </div>
+      <div class="social-info">
+        <h2>Social Info</h2>
+      </div>
+      <div class="social-icon">
+        <a href="https://www.facebook.com/raja.zulqurnain.1238"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/raja-zulqurnain-a7266535b/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajazulfi92@gmail.com" target="_blank">
+  <i class="fa-solid fa-envelope"></i>
+</a>
+      </div>
+    </div> 
+    <div  >
+      <div class="work-together">
+        <h2>Let's Work Together.</h2>
+      </div>      
+        <form class="form-data" id="contact-form">
+  <div class="labelname">
+    <input class="firstname" type="text" id="firstname" name="firstname" placeholder="First-Name" required>
+    <input class="firstname" type="text" id="lastname" name="lastname" placeholder="LastName" required>
+  </div>
+  <div class="label-subject">
+    <input type="email" id="email" name="email" placeholder="Email" required>
+  </div>
+  <div class="message-area">
+    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+  </div>
+  <div class="submit-btn">
+    <button class="Submit" type="submit">Submit Now</button>
+  </div>
+</form>
+
+          
+    </div>
+  </section>
+
+ <section id="last-section">
+   <div class="last-logo">
+    <h1><span class="spanweb">Muhammad </span> <span>Zulqurnain</span></h1>
+   </div>
+   <div class="lets-talk">
+    <h2>Let's Talk?</h2>
+    <div class="menutext">
+      <a href="#home">Home</a>
+      <a onclick="showResume()" href="#resume-section">Resume</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <div>@ All rights Reserved by Muhammad Zulqurnain</div>
+    </div>
+   </div>
+   <div class="lets-chat">
+    <button class="show-btn"> Let's Chat</button>
+   </div>
+</section>
+
+</body>
+<script> 
+  function showResume() {
+    const resumeSection = document.getElementById("resume-section");
+    resumeSection.style.display = "block";
+    resumeSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  document.querySelector(".show-btn").addEventListener("click", function () {
+    document.querySelector("#contact-form").scrollIntoView({ behavior: "smooth" });    
+    setTimeout(() => {
+      document.querySelector(".form-data input").focus();
+    }, 700); 
+  });
+document.getElementById("scrollToResume").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(".resume").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+document.getElementById("scrollToContact").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(".contact").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+
+</script>
+
+</html>

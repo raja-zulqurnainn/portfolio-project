@@ -1,0 +1,1592 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+
+
+
+#portfolio {
+    padding: 60px 20px;
+
+    background-color: black;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.portfolio-header h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.portfolio-header hr {
+    background-color: darkturquoise;
+    width: 175px;
+    height: 4px;
+    outline: none;
+    border: none;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+.portfolio-header p {
+    color: darkturquoise;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.portfolio-card {
+    background-color: #101010;
+    border-radius: 12px;
+
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border: 1px solid aqua;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 255, 255, 0.5),
+        0 0 20px rgba(0, 255, 255, 0.4);
+    ;
+}
+
+.portfolio-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-card h3 {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    color: lightgrey;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 255, 255, 0.858);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-card .btn:hover {
+    background-color: aqua;
+}
+
+
+header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    gap: 222px;
+    align-items: center;
+    padding: 20px 0px;
+    z-index: 1;
+    position: fixed;
+}
+
+
+
+.logo {
+    width: 160px;
+    height: auto;
+    color: aqua;
+    margin-left: 90px;
+}
+
+.logo h1 {
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.menubar {
+    display: flex;
+    gap: 69px;
+    margin-left: 400px;
+}
+
+.menubar a {
+    color: white;
+    display: block;
+    transition: all 0.4s;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menubar a:hover {
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    transform: scale(1.1);
+    text-underline-offset: 7px;
+    color: aqua;
+}
+
+.icon {
+    color: white;
+}
+
+.icon-hamburger i {
+
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.menubar.show {
+    top: 76px;
+    right: 9px;
+    transition: all 3s;
+    display: flex;
+    gap: 3px;
+    height: 270px;
+    width: 230px;
+    background-color: black;
+}
+
+.menubar.show a {
+    margin-top: 28px;
+    margin-left: 5px;
+    font-weight: 600;
+
+}
+
+.menubar.show a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    transform: scale(1.1);
+    text-underline-offset: 7px;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#home {
+    text-align: center;
+    width: 100%;
+    
+    color: white;
+    display: flex;
+    
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+
+.first-intropart {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out forwards;
+    margin-top: 160px;
+}
+
+.welcome h3,
+.myintro h1,
+.webdeveloper h2,
+.about-para p,
+.more-about {
+    opacity: 0;
+    
+    animation: fadeInUp 1s ease forwards;
+}
+
+.welcome h3 {
+    animation-delay: 0.2s;
+    
+}
+
+.myintro h1 {
+    animation-delay: 0.4s;
+}
+
+.webdeveloper h2 {
+    animation-delay: 0.6s;
+}
+
+.about-para p {
+    animation-delay: 0.8s;
+}
+
+.more-about {
+    animation-delay: 1s;
+}
+
+
+.welcome h3 {
+    color: aqua;
+    margin-top: 40px;
+    
+}
+
+.myintro h1 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.myintro h1 span {
+    color: aqua;
+}
+
+.webdeveloper h2 {
+    margin-top: 40px;
+}
+
+
+.about-para p {
+    width: 540px;
+    margin: 20px auto 39px;
+    line-height: 1.5;
+    color: lightgrey;
+}
+
+
+.more-about {
+    width: 300px;
+    display: flex;
+    gap: 15px;
+    margin: 10px auto 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.us h5 a {
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    padding: 10px 12px;
+    border-radius: 35px;
+    font-size: 17px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.us h5:hover a {
+    transform: scale(1.1);
+    background-color: #00ffffc4;
+}
+
+/* Icons */
+.iconone i,
+.icontwo i {
+    color: aqua;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.iconone i:hover,
+.icontwo i:hover {
+    transform: scale(1.3);
+}
+
+
+
+.welcome h3 {
+    color: aqua;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.myintro h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.myintro h1 span {
+    color: aqua;
+}
+
+.more-about {
+    width: 300px;
+
+    display: flex;
+    gap: 0px;
+    margin-top: 30px;
+    align-items: center;
+    margin-right: 0px;
+    margin-left: 605px;
+}
+
+.about-para p {
+    text-align: center;
+    
+    width: 540px;
+    margin-left: 490px;
+    line-height: 1.5;
+    color: lightgrey;
+
+    margin-top: 30px;
+    margin-bottom: 59px;
+}
+
+.us h5 a {
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    padding: 10px 12px;
+    border-radius: 35px;
+    font-size: 17px;
+
+}
+
+
+
+.iconone i,
+.icontwo i {
+
+    color: aqua;
+    text-decoration: none;
+    font-size: x-large;
+
+}
+
+.iconone i:hover,
+.icontwo i:hover {
+    transform: scale(1.3);
+}
+
+.more-about h5:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.resume {
+    color: white;
+    width: 100%;
+    background-color: black;
+    height: auto;
+    text-align: center;
+    padding-top: 180px;
+    z-index: 1;
+}
+
+.resume-hr hr {
+
+    background-color: darkturquoise;
+    width: 75px;
+    height: 4px;
+    outline: none;
+    border: none;
+    margin-top: 4px;
+}
+
+.education-text {
+    width: 250px;
+    display: flex;
+    margin-top: 60px;
+    background-color: black;
+    padding: 15px 5px;
+    border-radius: 40px;
+    border: 1px solid aqua;
+    margin-bottom: -45px;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+
+
+
+#resume p {
+    color: lightgrey;
+    line-height: 1.4;
+}
+
+.biography,
+.skills,
+.education {
+    display: flex;
+    gap: 10px;
+}
+
+.biography:hover,
+.skills:hover,
+.education:hover {
+    background-color: aqua;
+    color: black;
+    padding: 2px 3px;
+    border-radius: 20px;
+}
+
+.html-matric-flex,
+.css-inter-flex,
+.js-uni-flex {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    gap: 30px;
+    height: auto;
+    background-color: #101010;
+    padding-top: 55px;
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.5),
+        0 0 20px rgba(0, 255, 255, 0.4);
+    ;
+    text-align: start;
+}
+
+.js-uni-flex {
+    padding-bottom: 30px;
+}
+
+.biodata-text {
+    padding: 20px 0px;
+
+}
+
+.biodata-text p {
+    width: 370px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.biodata-text hr {
+    margin-top: 20px;
+}
+
+.matric,
+.inter {
+    display: flex;
+    gap: 140px;
+}
+
+.university {
+    display: flex;
+    gap: 55px;
+}
+
+
+.displayseen {
+    display: none;
+}
+
+.matric span,
+.inter span,
+.university span {
+    background-color: darkturquoise;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: small;
+    color: black;
+}
+
+#resume {
+    padding-bottom: 50px;
+}
+
+#resume-section {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    display: none;
+}
+
+.resume-image img {
+    width: 800px;
+    height: 800px;
+    box-shadow: 0 10px 15px rgba(0, 255, 255, 0.5),
+        0 0 10px rgba(0, 255, 255, 0.4);
+    ;
+}
+
+.contact {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    /* padding-top: 40px; */
+    padding: 40px 0px;
+}
+
+.email i,
+.contact-us i,
+.linkdien i {
+    font-size: x-large;
+    padding: 19px 19px;
+    border-radius: 50%;
+    background-color: aqua;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.contact-info {
+    width: 100%;
+    max-width: 228px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+    text-align: start;
+}
+
+.email a,
+.contact a,
+.linkdien a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.contact-info h5 {
+    color: lightgray;
+    margin-bottom: 2px;
+    margin-top: 4px;
+}
+
+.email,
+.contact-us,
+.linkdien {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    text-align: start;
+}
+.email i:hover,.contact-us i:hover,.linkdien i:hover{
+    transform: scale(1.1);
+}
+.contact-info h2 {
+    margin-left: 12px;
+    margin-bottom: 30px;
+}
+
+.social-info h2 {
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.social-icon i:hover{
+    transform: scale(1.1);
+}
+.social-info {
+    margin-left: -5px;
+}
+
+.form {
+    width: 100%;
+    max-width: 800px;
+    color: white;
+    background-color: #101010;
+
+    box-shadow: 0 15px 25px rgba(0, 25, 25, 0.5);
+
+    overflow: hidden;
+}
+
+.form-data {
+    width: 750px;
+    padding: 15px 0px;
+}
+
+.labelname {
+    display: flex;
+    gap: 40px;
+}
+
+.labelname input {
+    width: 400px;
+    padding: 19px 15px;
+    font-size: 15px;
+    background-color: darkturquoise;
+    border: none;
+    color: black;
+}
+
+.label-subject input {
+    width: 750px;
+    padding: 19px 15px;
+    font-size: 15px;
+    background-color: darkturquoise;
+    border: none;
+    margin-top: 30px;
+    color: black;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: 600;
+}
+
+.message-area textarea {
+    width: 750px;
+    height: 190px;
+    padding: 19px 15px;
+    font-size: 15px;
+
+    border: none;
+    margin-top: 30px;
+    color: black;
+    resize: none;
+    font-weight: 600;
+    background-color: darkturquoise;
+}
+
+.submit-btn button {
+    cursor: pointer;
+    width: 750px;
+    padding: 19px 15px;
+    font-size: 15px;
+
+    border: none;
+    margin-top: 30px;
+    color: black;
+    font-weight: 600;
+    background-color: darkturquoise;
+}
+
+.work-together h2 {
+    padding: 24px;
+    color: aqua;
+}
+
+.social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon a {
+    text-decoration: none;
+}
+
+.social-icon a i {
+    color: black;
+    font-size: x-large;
+    padding: 19px 19px;
+
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.form-data input:hover,
+.message-area textarea:hover,
+.submit-btn button:hover {
+    background-color: rgba(0, 255, 255, 0.731);
+}
+
+#last-section {
+    width: 100%;
+    max-width: 1540px;
+    display: flex;
+    color: white;
+    background-color: #101010;
+    padding: 40px;
+}
+
+.lets-talk {
+    text-align: center;
+}
+
+.menutext {
+    margin-top: 60px;
+}
+
+.menutext div {
+    margin-top: 10px;
+    color: aqua;
+}
+
+.menutext a:hover {
+    color: aqua;
+}
+
+.menutext a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.lets-chat button {
+    color: black;
+    background-color: aqua;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 19px;
+    font-weight: 600;
+}
+
+.lets-chat button:hover {
+    transform: scale(1.1);
+    color: black;
+    background-color: aqua;
+}
+
+.last-logo {
+    color: aqua;
+}
+
+@media(max-width:1440px) {
+    header {
+        gap: 178px;
+    }
+
+    .logo {
+        margin-left: 70px;
+    }
+
+    .last-section {
+        max-width: 1440px;
+
+    }
+.about-para p{
+    margin-left: 440px;
+}
+    .more-about {
+        margin-left: 540px;
+    }
+
+    .last-logo {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width:1024px) {
+    header {
+        gap: 0;
+    }
+
+    .last-section {
+        max-width: 1024px;
+    }
+
+    .last-logo {
+        margin-left: -38px;
+    }
+
+    .menutext {
+
+        margin-top: 50px;
+    }
+
+    .menubar {
+        gap: 38px;
+        margin-left: 360px;
+    }
+
+    .logo {
+        margin-left: 15px;
+    }
+
+    .logo h1 {
+        gap: 0;
+        font-size: large;
+    }
+
+    .spanweb {
+        margin-left: 25px;
+    }
+
+
+
+    .first-intropart {
+        width: 1024px;
+    }
+
+
+    .about-para p {
+        width: 480px;
+        margin-left: 280px;
+    }
+
+    .myintro h1 {
+        font-size: 32px;
+    }
+
+    .more-about {
+        margin-left: 370px;
+    }
+
+    .us h5 a {
+        font-size: 14px;
+        padding: 10px 11px;
+        border-radius: 19px;
+    }
+
+    .iconone i,
+    .icontwo i {
+        font-size: large;
+    }
+
+    #home {
+        height: 530px;
+        gap: 0;
+    }
+
+    .education-text {
+        width: 415px;
+    }
+
+    .biodata-text {
+        max-width: 850px;
+    }
+
+    .form {
+        max-width: 600px;
+
+    }
+
+    .work-together h2 {
+        padding: 23px;
+    }
+
+    .labelname input {
+        width: 265px;
+    }
+
+    .form-data {
+        width: 552px;
+    }
+
+    .labelname {
+        gap: 20px;
+    }
+
+    .label-subject input {
+        width: 552px;
+    }
+
+    .message-area textarea {
+        width: 552px;
+    }
+
+    .submit-btn button {
+        width: 552px;
+    }
+
+    .contact-info {
+        width: 208px;
+    }
+
+    .email i,
+    .contact i,
+    .linkdien i {
+        padding: 12px 12px;
+        font-size: large;
+    }
+
+    .social-icon a i {
+        font-size: large;
+        padding: 12px 12px;
+    }
+}
+
+@media(max-width:768px) {
+    .icon-hamburger i {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        gap: 400px;
+    }
+
+    .last-section {
+        max-width: 768px;
+    }
+
+    .last-logo {
+        display: flex;
+        justify-content: space-between;
+        font-size: x-small;
+    }
+
+    .menutext a {
+        margin-left: 19px;
+        margin-right: 21px;
+    }
+
+    .menubar {
+        transition: all 3s;
+        /* display: flex; */
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgba(0, 0, 139, 0.836);
+        top: 0px;
+
+        right: 0;
+        width: 255px;
+        height: 327px;
+        text-align: center;
+    }
+
+    #home {
+        padding-top: 30px;
+        height: 500px;
+    }
+
+    .first-intropart {
+        width: 768px;
+        margin-left: 0;
+    }
+
+    .about-para p {
+        width: 459px;
+        margin-left: 170px;
+    }
+
+    .more-about {
+        margin-left: 240px;
+    }
+
+    .more-about h5 a {
+        font-size: 12px;
+        padding: 8px 11px;
+        border-radius: 55px;
+    }
+
+    .iconone i,
+    .icontwo i {
+        font-size: medium;
+    }
+
+    .myintro h1 {
+        font-size: 27px;
+    }
+
+    .webdeveloper h2 {
+        font-size: 25px;
+    }
+
+    .more-about {
+        margin-right: 240px;
+    }
+
+    .second-intropart {
+        margin-top: 103px;
+    }
+
+    .second-intropart img {
+        width: 270px;
+        height: 270px;
+        margin-right: 26px;
+    }
+
+    .menubar.show {
+        top: 64px;
+    }
+
+    .education-text {
+        width: 341px;
+    }
+
+    .biography,
+    .skills,
+    .education {
+        gap: 8px;
+    }
+
+    .biodata-text {
+        width: 680px;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+
+    .biodata-text p {
+        width: 300px;
+    }
+
+    .matric,
+    .inter {
+        gap: 96px;
+    }
+
+    .university {
+        gap: 20px;
+    }
+
+    .biodata-text h2 {
+        font-size: larger;
+    }
+
+    .form {
+
+        width: 429px;
+    }
+
+    .form-data {
+        width: 405px;
+    }
+
+    .labelname {
+        gap: 10px;
+    }
+
+    .labelname input {
+        width: 197px;
+    }
+
+    .label-subject input,
+    .message-area textarea,
+    .submit-btn button {
+        width: 403px;
+    }
+
+    .message-area textarea {
+        height: 150px;
+    }
+
+    .contact-info {
+        width: 185px;
+    }
+
+    .email,
+    .contact-us,
+    .linkdien {
+        gap: 17px;
+    }
+
+    .logo h1 {
+        gap: 2px;
+    }
+
+    .resume-image img {
+        width: 600px;
+        height: 600px;
+        box-shadow: 0 10px 15px rgba(0, 255, 255, 0.5),
+            0 0 10px rgba(0, 255, 255, 0.4);
+        ;
+    }
+}
+
+@media(max-width:426px) {
+    .resume-image img {
+        width: 350px;
+        height: 350px;
+    }
+
+    header {
+        gap: 105px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1px;
+    }
+
+    .logo h1 {
+        font-size: x-small;
+        display: block;
+    }
+
+    .spanweb {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .menubar.show {
+        top: 64px;
+    }
+
+    .menubar.show {
+        top: 58px;
+    }
+
+    .icon-hamburger i {
+        font-size: medium;
+    }
+
+    #home {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .first-intropart {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 15px;
+    }
+
+    .about-para p {
+        width: 100%;
+        margin-right: 0;
+    }
+
+
+    .about-para p {
+        margin-left: 0px;
+    }
+
+    .more-about {
+        margin-left: 40px;
+        flex-wrap: wrap;
+        gap: 0px;
+        justify-content: flex-start;
+    }
+
+    .myintro h1 {
+        font-size: 24px
+    }
+
+
+    .html-matric-flex,
+    .css-inter-flex,
+    .js-uni-flex {
+        flex-direction: column;
+        display: none;
+    }
+
+    #resume {
+        width: 100%;
+    }
+
+    .education-text {
+        width: 223px;
+    }
+
+    .biodata-text {
+        width: 421px;
+    }
+
+    .resume-hr h1 {
+        font-size: larger;
+    }
+
+    .education-text {
+        padding: 9px 10px;
+        margin-top: 40px;
+    }
+
+    .biography,
+    .skills {
+        gap: 6px;
+        font-size: medium;
+    }
+
+    .displayseen {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.21);
+        box-shadow: 0 10px 15px rgba(0, 255, 255, 0.5),
+            0 0 10px rgba(0, 255, 255, 0.4);
+        ;
+        text-align: start;
+        width: 374px;
+        padding: 20px 10px;
+    }
+
+    .displayseen p {
+        margin-top: 15px;
+        color: lightgrey;
+        line-height: 1.4;
+    }
+
+    .displayseen hr {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .university {
+        gap: 42px;
+    }
+
+    .matric,
+    .inter {
+        gap: 124px;
+    }
+
+    .education-text {
+        margin-bottom: -58px;
+    }
+
+    .html h2 {
+        margin-top: 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-info {
+        width: 308px;
+        gap: 14px;
+    }
+
+    .form {
+        width: 342px;
+    }
+
+    .work-together h2 {
+        font-size: larger;
+    }
+
+    .form-data {
+        width: 311px;
+    }
+
+    .email,
+    .contact-us,
+    .linkdien {
+        gap: 59px;
+    }
+
+    .labelname input {
+        width: 150px;
+    }
+
+    .message-area textarea,
+    .submit-btn button,
+    .label-subject input {
+        width: 309px;
+    }
+
+    #last-section {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .last-logo {
+        margin-left: 56px;
+        font-size: small;
+    }
+
+    .menutext {
+        margin-top: 30px;
+    }
+
+    .menutext a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .menutext div {
+        font-size: small;
+    }
+
+    .lets-chat button {
+        padding: 9px 35px;
+        border-radius: 55px;
+    }
+}
+
+@media(max-width:376px) {
+    .resume-image img {
+        width: 325px;
+        height: 325px;
+    }
+
+    header {
+        gap: 128px;
+    }
+
+    .more-about {
+        margin-right: 137px;
+    }
+
+    .myintro h1 {
+        font-size: 20px
+    }
+
+    .second-intropart img {
+        margin-left: 20px;
+    }
+
+    .about-para p {
+        width: 301px;
+        margin-left: 5px;
+
+    }
+
+    .more-about {
+        margin-left: 1px;
+    }
+
+    .biodata-text {
+        width: 375px;
+    }
+
+    .skills,
+    .education {
+        font-size: small;
+    }
+
+    .education-text {
+        gap: 3px;
+        width: 180px;
+    }
+
+    .displayseen {
+        width: 323px;
+    }
+
+    .matric,
+    .inter {
+        gap: 103px;
+    }
+
+    .matric h2,
+    .inter h2 {
+        font-size: larger;
+    }
+
+    .university h2 {
+        font-size: larger;
+    }
+
+    .university {
+        gap: 0px;
+    }
+
+    .html h2,
+    .css h2,
+    .javascript h2 {
+        font-size: larger
+    }
+
+    .contact-info {
+        width: 209px;
+        gap: 14px;
+    }
+
+    .email,
+    .contact-us,
+    .linkdien {
+        gap: 41px;
+    }
+
+    .form {
+        width: 322px;
+        margin-left: 45px;
+    }
+
+    .work-together h2 {
+        font-size: medium;
+    }
+
+    .labelname input {
+        width: 148px;
+    }
+
+    .message-area textarea,
+    .submit-btn button,
+    .label-subject input {
+        width: 309px;
+    }
+
+    .last-logo {
+        margin-left: 32px;
+    }
+
+    .menutext a {
+        margin-left: -23px;
+        margin-right: 24px;
+    }
+
+    .lets-talk h2 {
+        font-size: medium;
+    }
+
+    .menutext {
+        margin-left: 44px;
+    }
+
+    .menutext div {
+        margin-left: -33px;
+    }
+}
+
+@media(max-width:326px) {
+    .resume-image img {
+        width: 270px;
+        height: 270px;
+    }
+
+    header {
+        gap: 100px;
+    }
+
+    .last-logo {
+        font-size: x-small;
+    }
+
+    .lets-talk h2 {
+        font-size: small;
+    }
+
+    .myintro h1 {
+        font-size: 17px;
+    }
+
+    .last-logo {
+        margin-left: 24px;
+    }
+
+    .menutext a {
+        font-size: x-small;
+    }
+
+    .menutext {
+        margin-left: 45px;
+        margin-top: 20px;
+    }
+
+    .menutext div {
+        font-size: xx-small;
+        margin-left: -30px;
+
+    }
+
+    .lets-chat button {
+        padding: 5px 21px;
+    }
+
+    .last-section {
+        gap: 25px;
+    }
+
+    .webdeveloper h2 {
+        font-size: 18px;
+    }
+
+    .more-about {
+        margin-left: -20px;
+    }
+
+    .about-para p {
+        width: 248px;
+    }
+
+    .second-intropart img {
+        margin-left: 15px;
+    }
+
+    .biodata-text {
+        width: 320px;
+
+    }
+
+    .displayseen {
+        width: 273px;
+    }
+
+    .html h2,
+    .css h2,
+    .javascript h2 {
+        font-size: medium;
+    }
+
+    .matric,
+    .inter {
+        gap: 69px;
+    }
+
+    .matric h2,
+    .inter h2 {
+        font-size: medium;
+    }
+
+    .inter span,
+    .matric span,
+    .university span {
+        font-size: x-small;
+    }
+
+    .university h2 {
+        font-size: medium;
+    }
+
+    .university {
+        gap: 25px;
+    }
+
+    .contact-info {
+        width: 187px;
+    }
+
+    .email,
+    .contact-us,
+    .linkdien {
+        gap: 19px;
+    }
+
+    .form {
+        width: 307px;
+        margin-left: 7px;
+    }
+
+    .work-together h2 {
+        padding: 13px;
+    }
+
+    .labelname {
+        gap: 0px;
+    }
+
+    .labelname input {
+        padding: 8px 2px;
+        width: 142px;
+
+    }
+
+    .labelname input::placeholder {
+        font-size: medium;
+    }
+
+    .label-subject input,
+    .message-area textarea,
+    .submit-btn button {
+        width: 302px;
+        margin-left: 4px;
+    }
+}
